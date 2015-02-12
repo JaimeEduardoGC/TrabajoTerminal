@@ -21,6 +21,7 @@
         <action input="/login.jsp" name="registerForm" path="/register"
             type="com.app.struts.action.UserRegisterAction">
             <forward name="success" path="/admin.jsp" />
+            <forward name="error" path="/index.jsp" />
         </action>
     </action-mappings>
     
