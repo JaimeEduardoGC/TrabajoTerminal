@@ -1,4 +1,8 @@
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -63,19 +67,18 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Login<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><form name="login" method="post" action="admin.html">
-                                            <h2>Iniciar Sesión</h2>
-                                            <input name="usuario" id="myusername" type="text" class="form-control" placeholder="Usuario" autofocus>
-                                            <input name="password" id="mypassword" type="password" class="form-control" placeholder="COntraseña">
-                                            <!-- The checkbox remember me is not implemented yet...
-                                            <label class="checkbox">
-                                              <input type="checkbox" value="remember-me"> Remember me
-                                            </label>
-                                            -->
-                                            <button name="Submit" id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                                    <li><html:form action="/register" method="post">
+                                            
+                                            <h2>Iniciar SesiÃ³n</h2>
+                                            Enter you username:
+                                            <html:text property="userName" size="50"/><br><br>
+                                            Enter your password:
+                                            <html:text property="password" size="30" /><br><br>
+                                            <html:submit>Sign in</html:submit>
+                                            <br><br>
 
                                             <div id="message"></div>
-                                        </form></li>
+                                        </html:form></li>
                                 </ul>
                             </li>
                         </ul>
