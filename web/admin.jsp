@@ -1,3 +1,8 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en" ng-app="filemanager">
 	<head>
@@ -80,11 +85,11 @@
 							
 							<!-- Carousel items -->
 							<div class="carousel-inner">
-								<div class="active item"><img src="img/login.png" alt="Ingreso de sesi�n"></div>
+								<div class="active item"><img src="img/login.png" alt="Ingreso de sesiï¿½n"></div>
 								<div class="item"><img src="img/perfiles.png" alt="Lista de perfiles"></div>
-								<div class="item"><img src="img/perfil_nuevo.png" alt="Creaci�n de nuevo perfil"></div>
-								<div class="item"><img src="img/busqueda.png" alt="B�squeda de perfiles"></div>
-								<div class="item"><img src="img/nuevo_delito.png" alt="Creaci�n de nuevo delito"></div>
+								<div class="item"><img src="img/perfil_nuevo.png" alt="Creaciï¿½n de nuevo perfil"></div>
+								<div class="item"><img src="img/busqueda.png" alt="Bï¿½squeda de perfiles"></div>
+								<div class="item"><img src="img/nuevo_delito.png" alt="Creaciï¿½n de nuevo delito"></div>
 								<div class="item"><img src="img/reportes.png" alt="Lista de reportes"></div>
 							</div>
 							<!-- Carousel nav -->

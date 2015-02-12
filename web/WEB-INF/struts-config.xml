@@ -7,7 +7,7 @@
 
 <struts-config>
     <form-beans>
-    
+        <form-bean name="registerForm" type="com.app.struts.formbeans.UserResgisterForm" />
     </form-beans>
     
     <global-exceptions>
@@ -15,11 +15,13 @@
     </global-exceptions>
 
     <global-forwards>
-        <forward name="welcome"  path="/Welcome.do"/>
     </global-forwards>
 
     <action-mappings>
-        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        <action input="/login.jsp" name="registerForm" path="/register"
+            type="com.app.struts.action.UserRegisterAction">
+            <forward name="success" path="/admin.jsp" />
+        </action>
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
