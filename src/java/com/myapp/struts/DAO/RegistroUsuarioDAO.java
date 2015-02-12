@@ -28,7 +28,7 @@ public class RegistroUsuarioDAO {
  
             try {
                 Statement st = con.createStatement();
-                PreparedStatement ps=con.prepareStatement("select * from usuario where name=? and password=?");  
+                PreparedStatement ps=con.prepareStatement("select * from usuario where usuario=? and password=?");  
                 ps.setString(1,userName);  
                 ps.setString(2,password);  
                 ResultSet rs=ps.executeQuery();  
